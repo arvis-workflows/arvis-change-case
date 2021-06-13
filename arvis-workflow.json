@@ -1,30 +1,30 @@
 {
   "$schema": "https://github.com/jopemachine/arvis-core/blob/master/workflow-schema.json",
   "category": "Tools",
-  "createdby": "Jay Gillibrand",
+  "creator": "Jay Gillibrand",
   "description": "Changes the case of text on the clipboard.",
   "defaultIcon": "icon.png",
   "name": "Change Case",
   "readme": "Change the case of text on the keyboard with the keyword case. All styles are previewed as Arvis results. Select one to copy it to the clipboard and paste into in the current application.\n\nOptionally, any text typed after `case` will be changed instead of the clipboard.",
   "version": "1.1",
-  "webaddress": "https://github.com/gillibrand/alfred-change-case",
+  "webAddress": "https://github.com/gillibrand/alfred-change-case",
   "enabled": true,
   "commands": [
     {
-      "type": "scriptfilter",
+      "type": "scriptFilter",
       "command": "tt",
       "title": "Change/Transform Text Case",
       "subtitle": "Change the case to upper, lower, title, camel, kebab, or snake case.",
-      "script_filter": {
+      "scriptFilter": {
         "darwin": {
           "script": "pbpaste | python changecase.py \"{query}\"",
           "shell": true
         }
       },
-      "running_subtext": "transforming text case...",
+      "runningSubtext": "transforming text case...",
       "withspace": true,
-      "arg_type": "optional",
-      "action": [
+      "argType": "optional",
+      "actions": [
         {
           "modifiers": "normal",
           "type": "clipboard",
@@ -33,20 +33,20 @@
       ]
     },
     {
-      "type": "scriptfilter",
+      "type": "scriptFilter",
       "command": "case",
       "title": "Change/Transform Text Case",
       "subtitle": "Change the case to upper, lower, title, camel, kebab, or snake case...",
-      "script_filter": {
+      "scriptFilter": {
         "darwin": {
           "script": "pbpaste | python changecase.py \"{query}\"",
           "shell": true
         }
       },
-      "running_subtext": "transforming text case...",
+      "runningSubtext": "transforming text case...",
       "withspace": true,
-      "arg_type": "optional",
-      "action": [
+      "argType": "optional",
+      "actions": [
         {
           "modifiers": "normal",
           "type": "clipboard",
@@ -55,20 +55,20 @@
       ]
     },
     {
-      "type": "scriptfilter",
+      "type": "scriptFilter",
       "command": "transform",
       "title": "Change/Transform Text Case",
       "subtitle": "Change the case to upper, lower, title, camel, kebab, or snake case...",
-      "script_filter": {
+      "scriptFilter": {
         "darwin": {
           "script": "pbpaste | python changecase.py \"{query}\"",
           "shell": true
         }
       },
-      "running_subtext": "transforming text case...",
+      "runningSubtext": "transforming text case...",
       "withspace": true,
-      "arg_type": "optional",
-      "action": [
+      "argType": "optional",
+      "actions": [
         {
           "modifiers": "normal",
           "type": "clipboard",
