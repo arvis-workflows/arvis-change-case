@@ -4,6 +4,12 @@ Changes the case of text selected, provided, or on the clipboard to UPPERCASE, l
 
 ![Screenshot](changecase.png)
 
+## 🔗 This workflow is converted from [alfred-workflow](https://github.com/gillibrand/alfred-change-case).
+
+* Note that there might be some code change or different actions from the original workflow.
+
+* Marked original workflow's creator to author.
+
 ## Install
 
 Download and double click `arvisworkflow` file
